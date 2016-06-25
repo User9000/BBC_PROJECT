@@ -193,13 +193,49 @@
          font-size: 2em;
      }
      
+     h1 a{
+         text-decoration: none;
+     }
+     h1 a:hover{
+        text-decoration: underline;
+     }
+     
      .headlineimage{
          
          float:left;
          height: 250px;
          
      }
-    </style>    
+     
+     .newsitem{
+         
+         position:relative;
+         left:10px;
+         top:-15px;
+         width:300px;
+         float:left;
+         
+        
+     }
+     
+     .newsitem a{
+         color:##1F4F82;
+         text-decoration: none;
+     }
+     
+     .newsitem a:hover{
+         
+         text-decoration: underline;
+     }
+     
+     .video{
+       background-image: url("img/save.png");
+       background-repeat: no-repeat;
+       background-position: left center;
+       padding-left: 20px;
+         
+     }
+        </style>    
 </head>
 
 <body>
@@ -308,8 +344,21 @@
             <div class="fixwidth">
                 
                <p><span class="date">2 April 2014</span> Last updated at 15:23</p>
-                <h1>Pollution to spread across England</h1>
+                <h1><a href="">Pollution to spread across England</a></h1>
                 <img class="headlineimage" src="img/headline.png"/>
+                
+                <div class="newsitem">
+                <p>A record 46,499,537 people are entitled to take part, according to provisional figures from the Electoral Commission.
+Polling stations will close at 22:00 BST with counting throughout the night.
+
+</p>
+
+                <p><a class="video" href=""> Why are pollution levels high?</a></p>
+                <p><a class="video" href=""> Why are pollution levels high?</a></p>
+                <p><a class="video" href=""> Why are pollution levels high?</a></p>
+                <p><a class="video" href=""> Why are pollution levels high?</a></p>
+
+                </div>
             </div><!-- fixwidth -->
             
          </div><!-- content -->
