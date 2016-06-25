@@ -14,11 +14,12 @@
     
      #toopbar{
          
-         background-color: #bb1919;
+         background-color: #990000;
+         
          width:100%;
          height:40px;
          color:white;
-         font-family: verdanaarial, helvetica,sans-serif;
+         font-family: arial, helvetica,sans-serif;
          
      }
      
@@ -94,6 +95,110 @@
        
    }
    
+   .break{
+       
+       clear: both;
+   }
+   #newsbar{
+         
+         background-color: #bb1919;
+         width:100%;
+         height:90px;
+         color:white;
+         font-family: verdanaarial, helvetica,sans-serif;
+         
+     }
+     
+     #newsbar p{
+         
+         margin:0;
+         padding:0;
+         padding-top:10px;
+         float:left;
+         
+     }
+     
+     #newsheader{
+         
+         font-size:3em;
+         
+     }
+     
+     #uk{
+         
+         font-size:0.5em;
+         margin-left: 10px;
+     }
+     
+     #rss{
+         
+         float:right;
+         margin-top: 38px;
+     }
+     
+     #rss img{
+         height: 14px;
+         
+     }
+     #topicmenu{
+        
+         
+     }
+     
+     #topicmenu ul{
+          background-color: #3E0C0D;
+          padding: 5px 0 0 5px;
+          margin:0;
+          height: 20px;
+         
+     }
+     
+     #topicmenu li{
+         
+         list-style: none;
+         font-size: 0.8em;
+         padding:0 10px 0 10px;
+         border-right: 1px solid white;
+         float:left;
+         background-color: none;
+         
+         
+     }
+     .selected{
+         
+         background-color:#EDEDED;
+         color: #666666;
+         height:20px;
+         position: relative;
+         top:-4px;
+         padding-top: 5px !important;
+     }
+     
+     #content{
+         
+         width:100%;
+         color:#535353;
+         font-size: 0.83m;
+         font-family: Arial, Helvetica, sans-serif;
+     }
+     
+     .date{
+         
+         font-weight: bold;
+     }
+     
+     h1{
+         
+         color:#1F4F82;
+         font-size: 2em;
+     }
+     
+     .headlineimage{
+         
+         float:left;
+         height: 250px;
+         
+     }
     </style>    
 </head>
 
@@ -109,11 +214,11 @@
                    
                    <img src = "img/logo.png" />
                    
-               </div>  
+               </div>  <!-- logodiv -->
                
                <div id="signin">
                    Sign In
-               </div> 
+               </div> <!--signin  -->
                
                <div id="topmenudiv">
                    
@@ -131,7 +236,7 @@
                    </ul>
                    
                    
-               </div> 
+               </div> <!-- topmenudiv  -->
                
                
                <div id="searchdiv">
@@ -139,14 +244,77 @@
                    
                    <input type="text" placeholder="Search"/>
                    
-               </div>
+               </div><!--searchdiv  -->
                
                
            </div>  
            
-        </div>
-     
-   </div>
+        </div><!-- topbar  -->
+        
+        <div class="break"></div>
+        
+         <div id="newsbar">
+             
+             
+                <div class="fixwidth">
+                    
+                    <p id="newsheader">NEWS <span id="uk">UK </span></p>
+                    
+                   <div id="rss">
+                       
+                       RSS<img src="img/RSS.png"/>
+                       
+                   </div><!-- rss  -->
+                   
+                   <div class="break"></div> <!-- break the floats  -->
+                   
+                   
+                   <div id="topicmenu">
+                       
+                       <ul>
+                           
+                           <li>Home</li>
+                           <li>World</li>
+                           <li class="selected">UK</li>
+                           <li>England</li>
+                           <li>N. Ireland</li>
+                           <li>Scotland</li>
+                           <li>Wales</li>
+                           <li>Business</li>
+                           <li>Politics</li>
+                           <li>Health</li>
+                           <li>Education</li>
+                           <li>Sci/Environment</li>
+                           <li>Technology</li>
+                           
+                           
+                       </ul>
+                       
+                       
+                   </div>  <!-- topicmenu  -->
+                   
+                   
+                   
+                   
+                </div><!-- fixwidth  -->
+        
+         </div><!-- newsbar -->
+         
+         <div class="break"></div>
+         
+         <div id="content">
+             
+             
+            <div class="fixwidth">
+                
+               <p><span class="date">2 April 2014</span> Last updated at 15:23</p>
+                <h1>Pollution to spread across England</h1>
+                <img class="headlineimage" src="img/headline.png"/>
+            </div><!-- fixwidth -->
+            
+         </div><!-- content -->
+         
+   </div><!-- container  -->
     
     
     
